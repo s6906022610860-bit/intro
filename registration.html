@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>สมัครเข้าศึกษาต่อ | มจพ.</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="logos/ตรามอ.png" alt="ตรา มจพ." />
+          <span>
+            <strong>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</strong>
+            <small>
+              KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK PRACHINBURI
+              CAMPUS
+            </small>
+          </span>
+        </a>
+        <nav>
+          <a href="index.html">หน้าแรก</a>
+          <a href="programs.html">สาขาที่เปิดรับ</a>
+          <a class="active" href="registration.html">สมัครเข้าศึกษาต่อ</a>
+          <a href="status.html">ตรวจสอบสถานะ</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main registration-main">
+      <div class="container breadcrumb">หน้าหลัก / สมัครเข้าศึกษาต่อ</div>
+      <section class="container title-row">
+        <div>
+          <h1>สมัครเข้าศึกษาต่อ</h1>
+          <p>กรอกข้อมูลเพื่อเริ่มต้นการสมัคร ปีการศึกษา 2570</p>
+        </div>
+        <div class="steps">
+          <b>1</b> ข้อมูลผู้สมัคร <i></i><span>2</span> ตรวจสอบและชำระเงิน
+        </div>
+      </section>
+      <form class="container registration-layout" action="status.html">
+        <div class="form-card large-form">
+          <h2>ข้อมูลส่วนตัว</h2>
+          <div class="form-grid">
+            <label>
+              เลขประจำตัวประชาชน *
+              <input type="tel" maxlength="13" placeholder="1-2345-67890-12-3" required />
+            </label>
+            <label>
+              วัน/เดือน/ปีเกิด *
+              <input type="date" required />
+            </label>
+          </div>
+          <label>
+            ชื่อ - นามสกุล *
+            <input type="text" pattern="^[ก-๙\s]+$"placeholder="กรอกชื่อและนามสกุลภาษาไทย" required />
+          </label>
+          <label>
+            ชื่อ - นามสกุล (ภาษาอังกฤษ) *
+            <input type="text" pattern="^[A-Za-z\s]+$" placeholder="กรอกชื่อและนามสกุลภาษาอังกฤษ" required />
+          </label>
+          <label>
+            อีเมล *
+            <input type="email" placeholder="name@example.com" required />
+          </label>
+          <div class="form-grid">
+            <label>
+              สัญชาติ *
+              <select name="nationality" required>
+                <option value="" selected disabled>เลือกสัญชาติ</option>
+                <option value="thai">ไทย</option>
+                <option value="other">อื่นๆ</option>
+              </select>
+            </label>
+            <label>
+              เชื้อชาติ *
+              <input placeholder="ระบุเชื้อชาติ" required />
+            </label>
+          </div>
+          <div class="form-grid contact-form-grid">
+            <label>
+              เบอร์ติดต่อ *
+              <input type="tel" maxlength="10" placeholder="0xx-xxx-xxxx" required />
+            </label>
+            <label>
+              ที่อยู่
+              <input placeholder="กรอกที่อยู่" />
+            </label>
+          </div>
+        </div>
+        <div class="form-card education-form">
+          <h2>ข้อมูลการศึกษา</h2>
+          <label>
+            ระดับการศึกษาปัจจุบัน *
+            <select name="education-level" required>
+              <option value="" selected disabled>เลือกระดับการศึกษา</option>
+              <option value="m6">มัธยมศึกษาปีที่ 6</option>
+              <option value="pwc">ประกาศนียบัตรวิชาชีพ (ปวช.)</option>
+              <option value="pws">ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</option>
+              <option value="diploma">อนุปริญญา / เทียบเท่า</option>
+              <option value="bachelor">ปริญญาตรี</option>
+            </select>
+          </label>
+          <label>
+            ชื่อสถานศึกษา
+            <input placeholder="ระบุชื่อสถานศึกษา" />
+          </label>
+          <label>
+            แผนการเรียน / สาขาวิชา *
+            <input placeholder="เช่น ศิลป์ภาษา/คณิตศาสตร์" required />
+          </label>
+          <label>
+            ปีที่สำเร็จการศึกษา *
+            <input type="tel" maxlength="4" placeholder="เลือกปีการศึกษา" required />
+          </label>
+          <label>
+            เกรดเฉลี่ยสะสม (GPX) *
+            <input type="number" step="0.01" placeholder="เช่น 3.50" required />
+          </label>
+        </div>
+        <div class="registration-side">
+          <aside class="schedule-card">
+            <h2>กำหนดการรับสมัคร</h2>
+            <p>เปิดรับสมัคร<br /><b>1 พฤศจิกายน 2569</b></p>
+            <p>ปิดรับสมัคร<br /><b>21 มกราคม 2570</b></p>
+            <hr />
+            <h3>เอกสารที่ต้องเตรียม</h3>
+            <ul>
+              <li>บัตรประจำตัวประชาชน</li>
+              <li>รูปถ่ายหน้าตรง</li>
+              <li>ใบแสดงผลการเรียน (ปพ.1)</li>
+            </ul>
+          </aside>
+          <aside class="program-choice">
+            <h2>คณะสาขาที่ต้องการสมัคร*</h2>
+            <label>
+              สาขาที่เลือก
+              <select name="program" required>
+                <option value="" selected disabled>เลือกสาขา</option>
+                <option value="it-4">IT เทคโนโลยีสารสนเทศ (4 ปี)</option>
+                <option value="it-transfer-3">
+                  ITI เทคโนโลยีสารสนเทศ (เทียบโอน 3 ปี)
+                </option>
+                <option value="it-transfer-25">
+                  ITT เทคโนโลยีสารสนเทศ (เทียบโอน 2.5 ปี)
+                </option>
+                <option value="ine-4">
+                  INE วิศวกรรมสารสนเทศและเครือข่าย (4 ปี)
+                </option>
+                <option value="inet-transfer-3">
+                  INET วิศวกรรมสารสนเทศและเครือข่าย (เทียบโอน 3 ปี)
+                </option>
+              </select>
+            </label>
+          </aside>
+          <button class="submit-look" type="submit">ยืนยัน</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <span>© 2570 มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span><span>ติดต่อเรา · คำถามที่พบบ่อย</span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1106 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --orange: #ff5b1b;
+  --orange-dark: #b53e04;
+  --ink: #343434;
+  --soft: #fff8f4;
+  --line: #e4e1df;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: Kanit, "Segoe UI", sans-serif;
+  font-size: 16px;
+}
+.container {
+  width: min(1500px, calc(100% - 64px));
+  margin-inline: auto;
+}
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #fafafa;
+}
+.header-inner {
+  min-height: 118px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.brand img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+.brand strong,
+.brand small {
+  display: block;
+}
+.brand strong {
+  font-size: 22px;
+  font-weight: 600;
+}
+.brand small {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color: #666;
+}
+nav {
+  display: flex;
+  gap: 33px;
+}
+nav a {
+  color: #777;
+  text-decoration: none;
+  font-weight: 400;
+}
+nav a:hover,
+nav .active {
+  color: var(--orange);
+  font-weight: 600;
+}
+.hero {
+  background:
+    linear-gradient(105deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.14)), #68594f;
+  color: #fff;
+  overflow: hidden;
+}
+.hero-content {
+  height: 324px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hero-copy {
+  z-index: 1;
+  max-width: 570px;
+}
+.eyebrow {
+  color: var(--orange);
+  font-weight: 600;
+  margin: 0 0 3px;
+}
+.hero .eyebrow {
+  color: #ffb08a;
+}
+.hero h1 {
+  font-size: 39px;
+  line-height: 1.1;
+  margin: 0;
+}
+.hero h1 em {
+  color: #ff6a2c;
+  font-style: normal;
+}
+.hero p {
+  margin: 8px 0 20px;
+}
+.hero-art {
+  position: absolute;
+  inset: 0 -120px 0 auto;
+  width: 67%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.82;
+}
+.button {
+  display: inline-block;
+  border-radius: 99px;
+  padding: 10px 23px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.button-light {
+  color: var(--orange);
+  background: #fff;
+}
+.quick-links {
+  background: #f1eeee;
+}
+.quick-grid {
+  min-height: 120px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+.quick-grid a {
+  text-align: center;
+  color: var(--orange);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.quick-icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--orange);
+  box-shadow: 0 4px 10px #bbb8;
+  margin: 0 auto 12px;
+  font-family: Arial, sans-serif;
+  font-size: 33px;
+}
+.section-heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.section-heading h2 {
+  font-size: 32px;
+  margin: 0;
+  line-height: 1.15;
+}
+.section-heading span {
+  display: block;
+  width: 120px;
+  height: 4px;
+  border-radius: 8px;
+  margin: 18px auto 0;
+  background: var(--orange);
+}
+.program-section {
+  padding: 58px 0 54px;
+}
+.program-panel {
+  background: var(--orange);
+  border-radius: 42px;
+  padding: 28px 42px 46px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px;
+  position: relative;
+}
+.program-card {
+  background: #fff;
+  min-height: 286px;
+  padding: 17px 16px;
+  border-radius: 42px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.program-card img {
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+}
+.program-card h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 8px 0 0;
+  line-height: 1.25;
+}
+.program-card p {
+  margin: 0 0 11px;
+}
+.program-card a {
+  width: 100%;
+  max-width: 175px;
+  background: #050505;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 99px;
+  margin-top: auto;
+  font-size: 14px;
+}
+.application-date {
+  position: absolute;
+  bottom: 8px;
+  right: 38px;
+  margin: 0;
+  color: #191919;
+  font-weight: 500;
+}
+.timeline {
+  padding: 8px 0 72px;
+}
+.timeline h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.timeline ol {
+  display: flex;
+  list-style: none;
+  padding: 24px 0 0;
+  margin: 0;
+}
+.timeline li {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 0 12px;
+}
+.timeline li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 2px;
+  background: #222;
+  right: -22px;
+  top: 17px;
+}
+.timeline strong {
+  display: block;
+  background: #ffa486;
+  padding: 6px 10px;
+  border-radius: 99px;
+  font-weight: 500;
+}
+.timeline span {
+  display: block;
+  line-height: 1.3;
+  margin-top: 4px;
+}
+.application {
+  padding: 60px 0 90px;
+  background: var(--soft);
+}
+.application-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.5fr);
+  gap: 28px;
+  align-items: start;
+}
+.form-card {
+  background: white;
+  padding: 32px;
+  border-radius: 17px;
+  box-shadow: 0 9px 22px #a77d5b18;
+}
+.form-card h2,
+.schedule-card h2 {
+  margin: 0 0 18px;
+  font-size: 25px;
+}
+.form-card label {
+  display: block;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.form-card input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  margin-top: 5px;
+  font: inherit;
+  color: #555;
+}
+.form-card select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  margin-top: 5px;
+  color: #666;
+  background: #fff;
+  font: inherit;
+}
+.schedule-card {
+  background: #ed5700;
+  color: #fff;
+  padding: 30px 25px;
+  border-radius: 15px;
+}
+.schedule-card p {
+  margin: 18px 0;
+}
+.schedule-card hr {
+  border: 0;
+  border-top: 1px solid #ffffff66;
+}
+.schedule-card h3 {
+  margin-bottom: 6px;
+}
+.schedule-card ul {
+  padding-left: 18px;
+  margin: 0;
+  line-height: 1.55;
+}
+.page-main {
+  min-height: calc(100vh - 190px);
+  padding: 28px 0 70px;
+  background: #fffaf7;
+}
+.breadcrumb {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 19px;
+}
+.left-heading {
+  text-align: left;
+}
+.left-heading span {
+  margin-left: 0;
+}
+.standalone {
+  margin-bottom: 58px;
+}
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 56px;
+}
+.title-row h1 {
+  margin: 0;
+  font-size: 34px;
+}
+.title-row p {
+  margin: 0;
+  color: #777;
+}
+.steps {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #888;
+  white-space: nowrap;
+}
+.steps b,
+.steps span {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #fff;
+  background: #f05400;
+  font-style: normal;
+}
+.steps span {
+  background: white;
+  border: 1px solid #ddd;
+  color: #bbb;
+}
+.steps i {
+  width: 37px;
+  height: 2px;
+  background: #ddd;
+}
+.registration-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 285px;
+  gap: 28px;
+  align-items: start;
+}
+.registration-side {
+  display: grid;
+  gap: 20px;
+}
+.program-choice {
+  padding: 24px 22px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 9px 22px #a77d5b18;
+}
+.program-choice h2 {
+  margin: 0 0 15px;
+  font-size: 21px;
+}
+.program-choice label {
+  display: block;
+  font-weight: 500;
+}
+.program-choice select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  margin-top: 5px;
+  font: inherit;
+  color: #666;
+  background: #fff;
+}
+.large-form {
+  grid-row: span 2;
+}
+.education-form {
+  min-height: 570px;
+}
+.registration-main .schedule-card {
+  margin-top: 7px;
+}
+.submit-look {
+  display: block;
+  width: 100%;
+  background: #ff5b1b;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  border-radius: 99px;
+  padding: 8px;
+  margin-top: 26px;
+  font-size: 23px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.status-main {
+  min-height: calc(100vh - 190px);
+}
+.status-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+}
+.status-card {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 36px;
+  padding: 27px 38px;
+  min-height: 360px;
+}
+.status-card h2 {
+  margin: 0 0 18px;
+  font-size: 25px;
+}
+.applicant-card > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px 30px;
+}
+.applicant-card p {
+  margin: 0;
+  font-size: 19px;
+}
+.applicant-card strong {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 7px;
+}
+.applicant-card a {
+  display: block;
+  text-align: right;
+  color: var(--orange);
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 72px;
+}
+.payment-card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.payment-card h2 {
+  color: var(--orange);
+}
+.payment-card h2 span {
+  padding: 3px 13px;
+  border-radius: 99px;
+  color: #fff;
+  background: #ffa079;
+  font-size: 16px;
+  font-weight: 400;
+}
+.payment-card p {
+  margin: 0;
+}
+.amount {
+  display: block;
+  color: var(--orange);
+  font-size: 49px;
+  line-height: 1;
+}
+.amount small {
+  font-size: 23px;
+  font-weight: 400;
+}
+.note {
+  font-size: 13px;
+  margin: 8px 0 18px !important;
+}
+.pay-button {
+  display: inline-block;
+  background: var(--orange);
+  color: #fff;
+  padding: 8px 25px;
+  text-decoration: none;
+  border-radius: 99px;
+  font-size: 19px;
+}
+.qr-toggle {
+  margin-top: 18px;
+}
+.qr-toggle summary {
+  display: table;
+  cursor: pointer;
+  list-style: none;
+}
+.qr-toggle summary::-webkit-details-marker {
+  display: none;
+}
+.qr-toggle .qr {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  z-index: 2;
+  width: 254px;
+  margin: 0;
+  padding: 12px;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 16%);
+}
+.qr-toggle .qr img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.qr {
+  font-family: monospace;
+  font-size: 86px;
+  font-weight: bold;
+  line-height: 0.72;
+  letter-spacing: -9px;
+  color: #000;
+}
+footer {
+  background: var(--orange-dark);
+  color: #fff;
+  font-size: 13px;
+}
+.footer-inner {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-inner span:last-child {
+  color: #ffd2bd;
+}
+.admissions-home {
+  background: #fff;
+}
+.admissions-header {
+  background: var(--orange);
+  color: #fff;
+}
+.admissions-top {
+  min-height: 114px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.admissions-brand {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+.admissions-brand img {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+}
+.admissions-brand strong,
+.admissions-brand small,
+.admissions-brand em {
+  display: block;
+}
+.admissions-brand strong {
+  font-size: 27px;
+  line-height: 1.05;
+}
+.admissions-brand small,
+.admissions-brand em {
+  font-size: 12px;
+  font-style: normal;
+}
+.admissions-brand em {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  margin-top: 3px;
+}
+.contact-links {
+  display: flex;
+  gap: 25px;
+}
+.contact-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.admissions-nav {
+  background: #fff;
+}
+.admissions-nav > div {
+  display: flex;
+  align-items: center;
+  min-height: 63px;
+  gap: 38px;
+}
+.admissions-nav a {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+}
+.admissions-nav a.active,
+.admissions-nav a:hover {
+  color: var(--orange);
+  border-color: var(--orange);
+}
+.admissions-hero {
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+  background: #74685f;
+}
+.admissions-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 58%;
+  display: block;
+  filter: brightness(0.72);
+}
+.admissions-hero-copy {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 4px #222;
+}
+.admissions-hero-copy h1 {
+  margin: 0;
+  font-size: 34px;
+}
+.admissions-hero-copy p {
+  margin: 2px 0 0;
+  font-size: 18px;
+}
+.home-actions {
+  background: #f0eded;
+}
+.home-action-grid {
+  min-height: 120px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+}
+.home-action-grid a {
+  color: var(--orange);
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.home-action-grid b {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  color: var(--orange);
+  border-radius: 50%;
+  box-shadow: 0 3px 8px #aaa7;
+  margin: 0 auto 11px;
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+}
+.home-action-grid b img {
+  display: block;
+  max-width: 35px;
+  max-height: 39px;
+  object-fit: contain;
+}
+.home-action-grid span {
+  display: block;
+}
+.news {
+  padding: 13px 0 0;
+}
+.news-title {
+  text-align: center;
+}
+.news-title h2 {
+  font-size: 32px;
+  margin: 0;
+}
+.news-title span {
+  width: 120px;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--orange);
+  display: block;
+  margin: 12px auto 20px;
+}
+.news-list {
+  border: 1px solid #dce3eb;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+.news-list a {
+  min-height: 55px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #dce3eb;
+}
+.news-list a:last-child {
+  border-bottom: 0;
+}
+.news-list a:hover {
+  background: #fff7f2;
+}
+.news-list i {
+  font-size: 29px;
+  color: var(--orange);
+  font-style: normal;
+}
+.news-list b {
+  background: #1688d1;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+}
+.admissions-footer {
+  background: #a93a02;
+  margin-top: 0;
+  color: #fff;
+}
+.admissions-footer-grid {
+  min-height: 155px;
+  display: grid;
+  grid-template-columns: 1.35fr 0.8fr 0.7fr;
+  gap: 40px;
+  padding: 12px 0 10px;
+}
+.admissions-footer h3 {
+  margin: 0 0 14px;
+  font-size: 18px;
+}
+.admissions-footer p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.admissions-footer small {
+  font-size: 12px;
+}
+.admissions-footer section > a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 0;
+  font-size: 13px;
+}
+.socials {
+  display: flex;
+  gap: 11px;
+  color: inherit;
+  text-decoration: none;
+}
+.socials span {
+  display: grid;
+  place-items: center;
+  height: 35px;
+  width: 35px;
+  background: #d46e40;
+  border-radius: 50%;
+  font-family: Arial, sans-serif;
+}
+.portal-name {
+  text-align: right;
+  padding-bottom: 6px;
+  color: #f2c5b0;
+  font-size: 12px;
+}
+@media (max-width: 1000px) {
+  .header-inner {
+    padding: 20px 0;
+    align-items: flex-start;
+  }
+  .brand strong {
+    font-size: 17px;
+  }
+  .brand small {
+    display: none;
+  }
+  nav {
+    gap: 17px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .hero-art {
+    opacity: 0.38;
+    width: 100%;
+    right: 0;
+  }
+  .program-panel {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .timeline ol {
+    flex-wrap: wrap;
+    gap: 23px 0;
+  }
+  .timeline li {
+    flex-basis: 33%;
+  }
+  .timeline li::after {
+    display: none;
+  }
+  .registration-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+  .registration-side {
+    grid-column: span 2;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  .registration-side .submit-look {
+    grid-column: 1 / -1;
+    width: min(260px, 100%);
+    justify-self: center;
+  }
+  .status-grid {
+    gap: 24px;
+  }
+  .applicant-card > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .admissions-nav > div {
+    gap: 18px;
+    flex-wrap: wrap;
+    padding: 12px 0;
+  }
+  .admissions-nav a {
+    min-height: 28px;
+  }
+  .admissions-footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .admissions-footer-grid section:first-child {
+    grid-column: span 2;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    width: min(100% - 32px, 520px);
+  }
+  .header-inner {
+    display: block;
+  }
+  .brand {
+    margin-bottom: 16px;
+  }
+  .brand img {
+    width: 52px;
+    height: 52px;
+  }
+  nav {
+    justify-content: flex-start;
+    font-size: 14px;
+    gap: 10px 18px;
+  }
+  .hero-content {
+    height: 315px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+  .quick-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 24px 0;
+  }
+  .quick-grid a:last-child {
+    grid-column: span 2;
+  }
+  .program-section {
+    padding-top: 45px;
+  }
+  .program-panel {
+    grid-template-columns: 1fr;
+    padding: 24px;
+    border-radius: 27px;
+  }
+  .program-card {
+    min-height: 260px;
+  }
+  .application-date {
+    position: static;
+    text-align: center;
+    margin: 14px 0 0;
+  }
+  .timeline li {
+    flex-basis: 50%;
+  }
+  .timeline strong {
+    font-size: 14px;
+  }
+  .application-grid,
+  .form-grid,
+  .registration-layout,
+  .status-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-card {
+    padding: 24px 18px;
+  }
+  .footer-inner {
+    padding: 18px 0;
+    display: block;
+  }
+  .footer-inner span {
+    display: block;
+  }
+  .footer-inner span + span {
+    margin-top: 5px;
+  }
+  .title-row {
+    display: block;
+    margin-bottom: 32px;
+  }
+  .title-row h1 {
+    font-size: 29px;
+  }
+  .steps {
+    margin-top: 17px;
+    font-size: 13px;
+  }
+  .registration-side {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+  .applicant-card > div {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .applicant-card a {
+    margin-top: 30px;
+  }
+  .status-card {
+    border-radius: 22px;
+    padding: 24px;
+    min-height: auto;
+  }
+  .payment-card {
+    display: block;
+  }
+  .payment-card h2 span {
+    display: inline-block;
+    margin-top: 8px;
+  }
+  .qr {
+    text-align: center;
+  }
+  .qr-toggle .qr {
+    top: calc(100% + 10px);
+    right: 0;
+    transform: none;
+    width: min(230px, calc(100vw - 48px));
+  }
+  .left-heading h1 {
+    font-size: 28px;
+  }
+  .admissions-top {
+    min-height: 100px;
+    padding: 17px 0;
+    align-items: flex-start;
+  }
+  .admissions-brand strong {
+    font-size: 20px;
+  }
+  .admissions-brand small {
+    font-size: 10px;
+  }
+  .admissions-brand em {
+    display: none;
+  }
+  .admissions-brand img {
+    width: 52px;
+    height: 52px;
+  }
+  .contact-links {
+    display: none;
+  }
+  .admissions-nav > div {
+    gap: 8px 16px;
+    font-size: 13px;
+  }
+  .admissions-hero {
+    height: 230px;
+  }
+  .admissions-hero img {
+    object-position: center;
+  }
+  .admissions-hero-copy h1 {
+    font-size: 26px;
+  }
+  .admissions-hero-copy p {
+    font-size: 14px;
+  }
+  .home-action-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 22px 0;
+    gap: 22px 10px;
+  }
+  .home-action-grid a:last-child {
+    grid-column: span 2;
+  }
+  .news-title h2 {
+    font-size: 28px;
+  }
+  .news-list a {
+    align-items: flex-start;
+    padding: 11px 12px;
+    line-height: 1.35;
+    font-size: 14px;
+  }
+  .admissions-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 25px 0;
+  }
+  .admissions-footer-grid section:first-child {
+    grid-column: auto;
+  }
+  .portal-name {
+    text-align: left;
+    padding-bottom: 18px;
+  }
+}
